@@ -1,11 +1,5 @@
 # mare.IA · AgroSUS — App do Agente (ACS)
 
-Aplicativo React Native (Expo) para o fluxo de pareamento e coleta de dados do
-programa AgroSUS, implementado 100% fiel ao wireframe de alta fidelidade
-fornecido, incluindo cores, tipografia, espaçamentos e todos os componentes
-visuais (toggles Sim/Não, tabelas de EPIs/sintomas/produtos, checklists,
-barras de progresso, badges de risco, etc).
-
 ## Estrutura do projeto
 
 ```
@@ -93,20 +87,6 @@ Para rodar no navegador:
 ```bash
 npx expo start --web
 ```
-
-## Design tokens
-
-Todas as cores, espaçamentos e tipografia usados no app vêm de
-`src/theme/`. Isso significa que qualquer ajuste de marca (cor primária,
-tamanhos de fonte, etc.) pode ser feito em um único lugar e se propaga para
-o app inteiro — exatamente como pedido no requisito de negócio (uso dos
-"design tokens oficiais: colors.ts, spacing.ts, typography.ts").
-
-- **Cor primária (laranja mare.IA):** `#F4761F`
-- **Onda da logo (azul):** `#6DC6DF`
-- **Risco alto:** `#D44444` · **Moderado:** `#C88913` · **Baixo:** `#2E9D6D`
-- **Texto principal:** `#132029`
-
 ## Fluxo de navegação
 
 ```
@@ -129,11 +109,3 @@ O estado do formulário de 9 etapas (e das telas complementares de saúde,
 histórico, boas práticas etc.) é mantido em `CollectionContext`, então o
 agente pode navegar entre etapas sem perder o que já preencheu.
 
-## Próximos passos sugeridos (fora do escopo deste protótipo)
-
-- Persistência local (SQLite/AsyncStorage) para funcionamento 100% offline
-  com fila de sincronização.
-- Integração com API real do AgroSUS (score de exposição, encaminhamento,
-  SINAN).
-- Autenticação real (hoje o botão "Entrar" apenas navega para o app).
-- Testes automatizados (Jest + Testing Library).
