@@ -34,7 +34,4 @@ Login
      └─ Perfil
 ```
 
-O estado do formulário de 9 etapas (e das telas complementares de saúde,
-histórico, boas práticas etc.) é mantido em `CollectionContext`, então o
-agente pode navegar entre etapas sem perder o que já preencheu.
 
